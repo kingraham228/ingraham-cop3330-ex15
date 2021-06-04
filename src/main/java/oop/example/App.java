@@ -1,5 +1,8 @@
 package oop.example;
-
+/*
+ *  UCF COP3330 Summer 2021 Assignment 1 Solution
+ *  Copyright 2021 Kate Ingraham
+ */
 
 public class App 
 {
@@ -23,8 +26,6 @@ public class App
         {
             System.out.println("Username unknown.\n I don't know you.");
         }
-
-
 
     }
 }

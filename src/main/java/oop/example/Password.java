@@ -1,5 +1,8 @@
 package oop.example;
-
+/*
+ *  UCF COP3330 Summer 2021 Assignment 1 Solution
+ *  Copyright 2021 Kate Ingraham
+ */
 import java.util.Scanner;
 import java.util.Arrays;
 
@@ -13,7 +16,7 @@ public class Password {
 
         do{
             System.out.println("Set your username: ");
-            userName = input.next();
+            userName = input.nextLine();
 
             if (userName.length() < 4){
                 System.out.println("Usernames must contain at least 4 characters.");
@@ -30,7 +33,7 @@ public class Password {
 
         do{
             System.out.println("Set your password: ");
-            userPassword = input.next();
+            userPassword = input.nextLine();
 
             if(userPassword.length() < 4){
                 System.out.println("Passwords must contain at least 4 characters.");
@@ -43,7 +46,7 @@ public class Password {
     public boolean checkUserName(){
         Scanner input = new Scanner(System.in);
         System.out.println("Enter your username: ");
-        String check = input.next();
+        String check = input.nextLine();
         char [] checkArray = check.toCharArray();
         char [] userNameArray = userName.toCharArray();
         return Arrays.equals(checkArray, userNameArray);
@@ -53,7 +56,7 @@ public class Password {
     public boolean checkUserPassword(){
         Scanner input = new Scanner(System.in);
         System.out.println("Enter your password: ");
-        String check = input.next();
+        String check = input.nextLine();
         char [] checkArray = check.toCharArray();
         char [] userPasswordArray = userPassword.toCharArray();
         return Arrays.equals(checkArray, userPasswordArray);
